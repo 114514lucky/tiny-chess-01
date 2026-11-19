@@ -6,9 +6,12 @@
 
 Strongest chess engine in 4 KB of Python: 0x88-board negamax
 alpha-beta with a transposition table, MVV-LVA + killer move ordering,
-quiescence search and piece-square evaluation. Fixed node budget per
-move (300,000 nodes, max depth 6), no wall clock, no unseeded
-randomness. Practice trials averaged ~1,305 Elo.
+quiescence search, piece-square evaluation and a king-safety term
+(pawn shield, only while queens are on the board). Fixed node budget
+per move (300,000 nodes, max depth 6) with an 8-second wall-clock
+guard that falls back to the last completed depth; no unseeded
+randomness. Practice trials averaged ~1,365 Elo, and the Berlin line
+as Black is a draw.
 
 ## Run it
 
