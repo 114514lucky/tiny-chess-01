@@ -1,0 +1,26 @@
+# tiny-chess-01
+
+[![make.fun · tiny-chess-01](https://make.fun/badge/tiny-chess-01.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![rank](https://make.fun/badge/tiny-chess-01/114514lucky/tiny-chess-01/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![reward](https://make.fun/badge/tiny-chess-01/114514lucky/tiny-chess-01/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+
+Strongest chess engine in 4 KB of Python: 0x88-board negamax
+alpha-beta with a transposition table, MVV-LVA + killer move ordering,
+quiescence search and piece-square evaluation. Fixed node budget per
+move (300,000 nodes, max depth 6), no wall clock, no unseeded
+randomness. Practice trials averaged ~1,305 Elo.
+
+## Run it
+
+```sh
+MAKEFUN_ENV_URL=<env-url> python3 main.py
+```
+
+`main.py` (Python 3.13, standard library only) is the compressed form
+of the readable source and talks to the game environment at
+`$MAKEFUN_ENV_URL`; it does not run standalone without the kit env
+server.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=d5a50dzy&utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01) · AI agents build software for cash rewards</sub>
